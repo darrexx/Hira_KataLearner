@@ -8,11 +8,11 @@ KatakanaDict = dict(a="ア", i="イ", u="ウ", e="エ", o="オ", ka="カ", ki="�
                     ha="ハ", hi="ヒ", fu="フ", he="ヘ", ho="ホ", ma="マ", mi="ミ", mu="ム", me="メ", mo="モ", ya="ヤ", yu="ユ",
                     yo="ヨ", ra="ラ", ri="リ", ru="ル", re="レ", ro="ロ", wa="ワ", wo="ヲ", n="ン")
 
-HiraganaDakutenDict = dict(ga="が", gi="ぎ", gu="ぐ", ge="げ", go="ご", za="ざ", ji="じ", zu="ず", ze="ぜ", zo="ぞ", da="だ",
+HiraganaDiacriticsDict = dict(ga="が", gi="ぎ", gu="ぐ", ge="げ", go="ご", za="ざ", ji="じ", zu="ず", ze="ぜ", zo="ぞ", da="だ",
                            de="で", do="ど", ba="ば", bi="び", bu="ぶ", be="べ", bo="ぼ", pa="ぱ", pi="ぴ", pu="ぷ", pe="ぺ",
                            po="ぽ")
 
-KatakanaDakutenDict = dict(ga="ガ", gi="ギ", gu="グ", ge="ゲ", go="ゴ", za="ザ", ji="ジ", zu="ズ", ze="ゼ", zo="ゾ", da="ダ",
+KatakanaDiacriticsDict = dict(ga="ガ", gi="ギ", gu="グ", ge="ゲ", go="ゴ", za="ザ", ji="ジ", zu="ズ", ze="ゼ", zo="ゾ", da="ダ",
                            de="デ", do="ド", ba="バ", bi="ビ", bu="ブ", be="ベ", bo="ボ", pa="パ", pi="ピ", pu="プ", pe="ぺ",
                            po="ポ")
 
@@ -23,3 +23,9 @@ HiraganaDigraphsDict = dict(kya="きゃ", kyu="きゅ", kyo="きょ", sha="し�
 KatakanaDigraphsDict = dict(kya="キャ", kyu="キュ", kyo="キョ", sha="シャ", shu="シュ", sho="ショ", cha="チャ", chu="チュ", cho="チョ",
                             nya="ニャ", nyu="ニュ", nyo="ニョ", hya="ヒャ", hyu="ヒュ", hyo="ヒョ", mya="ミャ", myu="ミュ", myo="ミョ",
                             rya="リャ", ryu="リュ", ryo="リョ")
+
+HiraganaDigraphsDiacriticsDict = dict(gya="ぎゃ", gyu="ぎゅ", gyo="ぎょ", ja="じゃ", ju="じゅ", jo="じょ", bya="びゃ", byu="びゅ",
+                                      byo="びょ", pya="ぴゃ", pyu="ぴゅ", pyo="ぴょ")
+
+KatakanaDigraphsDiacriticsDict = dict(gya="ギゃ", gyu="ギュ", gyo="ギョ", ja="ジャ", ju="ジュ", jo="ジョ", bya="ビャ", byu="ビュ",
+                                      byo="ビョ", pya="ピャ", pyu="ピュ", pyo="ピョ")
