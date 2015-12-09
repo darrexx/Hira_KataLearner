@@ -15,3 +15,11 @@ HiraganaDakutenDict = dict(ga="が", gi="ぎ", gu="ぐ", ge="げ", go="ご", za=
 KatakanaDakutenDict = dict(ga="ガ", gi="ギ", gu="グ", ge="ゲ", go="ゴ", za="ザ", ji="ジ", zu="ズ", ze="ゼ", zo="ゾ", da="ダ",
                            de="デ", do="ド", ba="バ", bi="ビ", bu="ブ", be="ベ", bo="ボ", pa="パ", pi="ピ", pu="プ", pe="ぺ",
                            po="ポ")
+
+HiraganaDigraphsDict = dict(kya="きゃ", kyu="きゅ", kyo="きょ", sha="しゃ", shu="しゅ", sho="しょ", cha="ちゃ", chu="ちゅ", cho="ちょ",
+                            nya="にゃ", nyu="にゅ", nyo="にょ", hya="ひゃ", hyu="ひゅ", hyo="ひょ", mya="みゃ", myu="みゅ", myo="みょ",
+                            rya="りゃ", ryu="りゅ", ryo="りょ")
+
+KatakanaDigraphsDict = dict(kya="キャ", kyu="キュ", kyo="キョ", sha="シャ", shu="シュ", sho="ショ", cha="チャ", chu="チュ", cho="チョ",
+                            nya="ニャ", nyu="ニュ", nyo="ニョ", hya="ヒャ", hyu="ヒュ", hyo="ヒョ", mya="ミャ", myu="ミュ", myo="ミョ",
+                            rya="リャ", ryu="リュ", ryo="リョ")
