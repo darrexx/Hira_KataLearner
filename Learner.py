@@ -1,5 +1,7 @@
 import Symbols
 import random
+import sys
+
 
 
 def learnhira():
@@ -18,20 +20,76 @@ def learnkata():
     print(key == answer)
 
 
-def learnhiradakuten():
-    dicti = Symbols.HiraganaDakutenDict
+def learnhiradiacritics():
+    dicti = Symbols.HiraganaDiacriticsDict
     key = random.choice(list(dicti.keys()))
     print(dicti[key])
     answer = input("Eingabe? ")
     print(key == answer)
 
 
-def learnkatadakuten():
-    dicti = Symbols.KatakanaDakutenDict
+def learnkatadiacritics():
+    dicti = Symbols.KatakanaDiacriticsDict
     key = random.choice(list(dicti.keys()))
     print(dicti[key])
     answer = input("Eingabe? ")
     print(key == answer)
+
+
+def learnhiradiagraphs():
+    dicti = Symbols.HiraganaDigraphsDict
+    key = random.choice(list(dicti.keys()))
+    print(dicti[key])
+    answer = input("Antwort? ")
+    print(key == answer)
+
+
+def learnkatadiagraphs():
+    dicti = Symbols.KatakanaDigraphsDict
+    key = random.choice(list(dicti.keys()))
+    print(dicti[key])
+    answer = input("Antwort? ")
+    print(key == answer)
+
+
+def learnkatadiacriticsdiagraphs():
+    dicti = Symbols.KatakanaDigraphsDiacriticsDict
+    key = random.choice(list(dicti.keys()))
+    print(dicti[key])
+    answer = input("Antwort? ")
+    print(key == answer)
+
+
+def learnhiradiacriticsdiagraphs():
+    dicti = Symbols.HiraganaDigraphsDiacriticsDict
+    key = random.choice(list(dicti.keys()))
+    print(dicti[key])
+    answer = input("Antwort? ")
+    print(key == answer)
+
+
+launchoptions = dict(h=learnhira, k=learnkata, hd=learnhiradiacritics, kd=learnkatadiacritics,
+                     hdi=learnhiradiagraphs, kdi=learnkatadiagraphs, hdd=learnhiradiacriticsdiagraphs,
+                     kdd=learnkatadiacriticsdiagraphs)
+
+
+def mainmethod():
+    if len(sys.argv) == 1:
+        launchoptions[input("Was möchten sie lernen? \n"
+                            "h: Hiragana\n"
+                            "k: Katakana\n"
+                            "ha: alle Hiragana\n"
+                            "ka: alle Katakana\n"
+                            "hd: Hiragana mit Diacritics\n"
+                            "kd: Katakana mit Diacritics\n"
+                            "hdi: Hiragana mit Diagraphs\n"
+                            "kdi: Katakana mit Diagraphs\n"
+                            "hdd: Hiragana mit DD\n"
+                            "kdd: Katakana mit DD\n")]()
+    else:
+        launchoptions[sys.argv[1]]()
+
 
 if __name__ == "__main__":
-    learnhira()
+    mainmethod()
+    # learnhira()
