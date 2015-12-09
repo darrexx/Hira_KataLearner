@@ -12,6 +12,24 @@ def learnhira():
     print(key == answer)
 
 
+def learnallhira():
+    dicti = {**Symbols.HiraganaDict, **Symbols.HiraganaDigraphsDiacriticsDict, **Symbols.HiraganaDiacriticsDict,
+             **Symbols.HiraganaDigraphsDict}
+    key = random.choice(list(dicti.keys()))
+    print(dicti[key])
+    answer = input("Antwort? ")
+    print(key == answer)
+
+
+def learnallkata():
+    dicti = {**Symbols.KatakanaDict, **Symbols.KatakanaDiacriticsDict, **Symbols.KatakanaDigraphsDiacriticsDict,
+             **Symbols.KatakanaDigraphsDict}
+    key = random.choice(list(dicti.keys()))
+    print(dicti[key])
+    answer = input("Antwort? ")
+    print(key == answer)
+
+
 def learnkata():
     dicti = Symbols.KatakanaDict
     key = random.choice(list(dicti.keys()))
@@ -70,7 +88,7 @@ def learnhiradiacriticsdiagraphs():
 
 launchoptions = dict(h=learnhira, k=learnkata, hd=learnhiradiacritics, kd=learnkatadiacritics,
                      hdi=learnhiradiagraphs, kdi=learnkatadiagraphs, hdd=learnhiradiacriticsdiagraphs,
-                     kdd=learnkatadiacriticsdiagraphs)
+                     kdd=learnkatadiacriticsdiagraphs, ha=learnallhira)
 
 
 def mainmethod():
