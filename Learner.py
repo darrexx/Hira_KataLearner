@@ -11,8 +11,10 @@ def asksymbol(dicti):
         sys.exit()
     elif answer == "m":
         mainmethod()
+    elif key == answer:
+        print("Richtig!")
     else:
-        print(key == answer)
+        print("Falsch! " + key)
 
 
 def learnhira():
